@@ -2,5 +2,12 @@
 name = "stdscope"
 version = "0.1.0"
 edition = "2024"
+description = "A transparent proxy for inspecting a program over stdio transport"
 
 [dependencies]
+tokio = { version = "1.36", features = ["full"] }
+clap = { version = "4.5", features = ["derive"] }
+anyhow = "1.0"
+
+[dev-dependencies]
+tempfile = "3.10"
